@@ -97,6 +97,20 @@ Con este cambio, el componente quedó más ordenado porque ahora solo se encarga
 
 Commit asociado: `feat(lesson-09): `
 
+## Lesson 10 – Add routing
+
+En esta lección se  aprendió a agregar rutas a la aplicación para poder navegar entre diferentes pantallas. Hasta este punto, toda la información se veía en una sola vista, pero el tutorial introduce el sistema de routing de Angular para mostrar un detalle de cada vivienda.
+
+Primero se creó la configuración de rutas, donde se definió una ruta principal para el componente `Home` y una ruta con parámetro para el detalle de cada ubicación. Después, esta configuración se importó en el componente raíz para que Angular pudiera manejar la navegación según la URL.
+
+También se reemplazó el contenido estático en `App` por la directiva del enrutador (`<router-outlet>` o su equivalente en Angular moderno), lo que permite que cada componente se cargue dinámicamente según la ruta seleccionada.
+
+Con esto, la aplicación dejó de ser una sola pantalla fija y empezó a comportarse como una app real, donde es posible cambiar de vista mediante enlaces o escribiendo la URL.
+
+Commit asociado: `feat(lesson-10): Add routing setup`
+
+
+
 
 
 
