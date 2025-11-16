@@ -1,12 +1,12 @@
 # Angular First App – Prueba Técnica
 
 ## Lesson 01 – Create the project
-- Proyecto creado con Angular CLI.
-- Servidor iniciado con `npm run start`.
-- Se identificó y editó el componente raíz `app.ts`.
-- Se utilizó interpolación `{{ title }}` en el template inline.
-- Se agregaron estilos básicos en `app.css`.
-- Confirmado funcionamiento visitando `http://localhost:4200/`.
+ Proyecto creado con Angular CLI.
+ Servidor iniciado con `npm run start`.
+ Se identificó y editó el componente raíz `app.ts`.
+ Se utilizó interpolación `{{ title }}` en el template inline.
+ Se agregaron estilos básicos en `app.css`.
+ Confirmado funcionamiento visitando `http://localhost:4200/`.
 
 Commit asociado: feat(lesson-01): Hello world
 
@@ -75,6 +75,18 @@ De esta manera, cuando el template haga referencia a esas propiedades, Angular l
 Aunque todavía no se están renderizando todas esas propiedades en pantalla, este paso dejó claro cómo Angular permite conectar los datos del componente con el template y cómo esos valores pueden cambiar de forma dinámica según lo que el componente reciba.
 
 Commit asociado: `feat(lesson-07): Add dynamic template values`
+
+## Lesson 08 – Use @for to list housing locations
+
+En esta lección se pasó de mostrar una sola vivienda a preparar el componente para manejar varias. Para eso, convirtió la información en una colección de ubicaciones y utilizó la nueva sintaxis de Angular para recorrer la lista directamente en el template.
+
+En el componente `Home` se definió un arreglo de objetos con el tipo `HousingLocationInfo`, y en la plantilla se usó un bloque de repetición (`@for` / `ngFor`) para renderizar varias veces el componente `HousingLocation`, pasando en cada vuelta una de las ubicaciones como input. De esta forma, la página dejó de estar “quemada” con un solo ejemplo y empezó a comportarse como un listado dinámico.
+
+Esta lección  ayudó a entender cómo Angular puede generar varias tarjetas en la vista a partir de un arreglo de datos, simplemente declarando la estructura en TypeScript y recorriéndola dentro del template. Al probar en `http://localhost:4200/`, se pudo ver múltiples tarjetas de vivienda en la sección de resultados.
+
+Commit asociado: `feat(lesson-08): Use '@for' block in templates`
+
+
 
 
 
