@@ -86,6 +86,19 @@ Esta lección  ayudó a entender cómo Angular puede generar varias tarjetas en 
 
 Commit asociado: `feat(lesson-08): Use '@for' block in templates`
 
+## Lesson 09 – Create a service
+
+En esta lección se aprendió a separar la lógica de datos del componente usando un servicio.  
+Hasta ahora, el componente `Home` tenía directamente en su interior toda la información de las viviendas, lo que hacía que creciera muy rápido. Para solucionar esto, se creó un servicio dedicado a manejar esos datos.
+
+Dentro del nuevo servicio se movieron tanto el arreglo de ubicaciones como los métodos necesarios para obtener la información. Luego, el servicio se inyectó en el componente `Home` utilizando el constructor, lo que permitió reemplazar los datos “quemados” por los que devuelve el servicio.
+
+Con este cambio, el componente quedó más ordenado porque ahora solo se encarga de pedir los datos y mostrarlos, mientras que el servicio es el responsable de proveer la información. Esta lección reforzó la idea de que Angular fomenta componentes simples y servicios que centralizan la lógica.
+
+Commit asociado: `feat(lesson-09): `
+
+
+
 
 
 
