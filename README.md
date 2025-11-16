@@ -133,6 +133,16 @@ Después de agregar el formulario y su lógica básica, la aplicación siguió f
 
 Commit asociado: `feat(lesson-12): Integrate Angular Forms`
 
+## Lesson 13 – Add search functionality
+
+En esta lección se agregó la funcionalidad de búsqueda dentro del componente `Home`. Hasta este punto el formulario tenía un input y un botón, pero no hacía nada. El tutorial enseñó cómo filtrar la lista de viviendas según la ciudad que el usuario escriba.
+
+Para lograrlo, se creó una propiedad que almacena el texto ingresado por el usuario y un método que ejecuta la búsqueda cada vez que el botón es presionado. Ese método toma la lista completa de ubicaciones del servicio y devuelve solo aquellas que coinciden con lo escrito en el campo de búsqueda.
+
+Luego, en el template, se reemplazó el listado fijo por el resultado filtrado, de modo que solo se muestran las viviendas que coinciden con la ciudad buscada. También se actualizó el input para escuchar los cambios del usuario y mantener sincronizado el valor ingresado.
+
+Commit asociado: `feat(lesson-13): Add search functionality`
+
 
 
 
