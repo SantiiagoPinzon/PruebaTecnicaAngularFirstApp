@@ -1,29 +1,12 @@
-import {Component} from '@angular/core';
-import {HousingLocation} from '../housing-location/housing-location';
-import {HousingLocationInfo} from '../housinglocation';
-
-@Component({
-  selector: 'app-home',
-  imports: [HousingLocation],
-  template: `
-    <section>
-      <form>
-        <input type="text" placeholder="Filter by city" />
-        <button class="primary" type="button">Search</button>
-      </form>
-    </section>
-    <section class="results">
-      @for(housingLocation of housingLocationList; track $index) {
-        <app-housing-location [housingLocation]="housingLocation" />
-      }
-    </section>
-  `,
-  styleUrls: ['./home.css'],
+import {Injectable} from '@angular/core';
+import {HousingLocationInfo} from './housinglocation';
+@Injectable({
+  providedIn: 'root',
 })
-export class Home {
+export class HousingService {
   readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
 
-  housingLocationList: HousingLocationInfo[] = [
+  protected housingLocationList: HousingLocationInfo[] = [
     {
       id: 0,
       name: 'Acme Fresh Start Housing',
@@ -125,4 +108,12 @@ export class Home {
       laundry: true,
     },
   ];
+
+  getAllHousingLocations(): HousingLocationInfo[] {
+    return this.housingLocationList;
+  }
+
+  getHousingLocationById(id: number): HousingLocationInfo | undefined {
+    return this.housingLocationList.find((housingLocation) => housingLocation.id === id);
+  }
 }
