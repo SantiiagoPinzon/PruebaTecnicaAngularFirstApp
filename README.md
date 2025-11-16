@@ -109,6 +109,18 @@ Con esto, la aplicación dejó de ser una sola pantalla fija y empezó a comport
 
 Commit asociado: `feat(lesson-10): Add routing setup`
 
+## Lesson 11 – Customize the details page
+
+En esta lección se creó la página de detalles para cada vivienda. Hasta ahora solo existía una lista de ubicaciones, pero no había forma de ver la información completa de cada una. El tutorial enseñó cómo resolver esto usando rutas dinámicas.
+
+Primero, se añadió un componente de detalle que recibe el `id` de la vivienda desde la URL. Ese `id` se usa para pedirle al servicio la información específica de esa ubicación. Esto hizo que la navegación fuera más útil, porque ahora cada tarjeta puede llevar a su propia página.
+
+Después se actualizó la configuración de rutas para incluir una ruta con parámetro, de forma que Angular pueda cargar el componente de detalle cuando la URL contiene un identificador. También se agregaron enlaces desde la lista principal hacia la nueva página.
+
+Con estos cambios, la aplicación pasó de ser una simple lista a tener navegación real entre pantallas. Al probarla en `http://localhost:4200/`, se pudo abrir la página de detalles de una vivienda y ver su información completa.
+
+Commit asociado: `feat(lesson-11): Add details page with dynamic route`
+
 
 
 
