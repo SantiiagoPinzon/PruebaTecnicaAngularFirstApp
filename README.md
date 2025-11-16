@@ -143,6 +143,20 @@ Luego, en el template, se reemplazó el listado fijo por el resultado filtrado, 
 
 Commit asociado: `feat(lesson-13): Add search functionality`
 
+## Lesson 14 – Add HTTP communication to your app
+
+En esta última lección se aprendió a reemplazar los datos estáticos por información real obtenida desde un archivo JSON usando solicitudes HTTP. Hasta este punto, las viviendas estaban “quemadas” directamente en el código o en el servicio, pero el tutorial mostró cómo obtenerlas desde un backend simple.
+
+Primero se actualizó el servicio para usar `HttpClient` y hacer una petición a un archivo JSON que contiene la lista de viviendas. Después se configuró la aplicación para incluir el módulo de HTTP de Angular, permitiendo que el servicio pudiera realizar la solicitud sin errores.
+
+Una vez hecho esto, el componente `Home` dejó de depender de datos locales y pasó a obtener la información directamente desde el servicio, el cual ahora entrega los datos cargados desde el archivo remoto. También se agregó la misma lógica en la página de detalles para cargar una sola vivienda según el id seleccionado.
+
+Gracias a este cambio, la aplicación quedó conectada a un origen de datos real, comportándose más como una aplicación completa y no como un ejemplo cualquiera. Al probar en `http://localhost:4200/`, se confirmó que las viviendas y sus detalles se estaban cargando correctamente desde la solicitud HTTP.
+(PARA EJECUTAR El `http://localhost:4200/`, se debera abrir otra terminal y mantener encendido el json server, mediante el comando json-server --watch db.json --port 3000, y luego si se podra ejecutar npm run start. para ver los respectivos resultados del challenge )
+
+Commit asociado: `feat(lesson-14): Add HTTP communication to your app`
+
+
 
 
 
