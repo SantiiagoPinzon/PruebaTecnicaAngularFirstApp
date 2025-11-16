@@ -56,3 +56,25 @@ Al final, la aplicación siguió compilando correctamente y era posible ver que 
 
 Commit asociado: `feat(lesson-05): Use interface in component`
 
+## Lesson 06 – Property binding
+
+En esta lección se empezó a usar property binding para pasar datos desde el componente `Home` hacia el componente `HousingLocation`. Para eso, definió un objeto `housingLocation` tipado con la interfaz `HousingLocationInfo` dentro de `Home`, con todos los datos de una vivienda de prueba (id, nombre, ciudad, estado, foto, etc.).
+
+Luego, en el template de `Home`, se utilizó la sintaxis de property binding `[housingLocation]="housingLocation"` sobre la etiqueta `<app-housing-location>`. De esta forma, el componente hijo recibe el objeto completo y queda listo para mostrar esos datos en su propia plantilla. Esta lección le ayudó a entender mejor cómo Angular conecta componentes padre e hijo a través de propiedades.
+
+Commit asociado: `feat(lesson-06): Add property binding`
+
+## Lesson 07 – Dynamic template values
+
+En esta lección se aprendió a mostrar valores dinámicos directamente dentro del template.  
+Esto quiere decir que, en lugar de escribir texto estático, el componente ahora usa valores que vienen de propiedades definidas en TypeScript.
+
+Para lograrlo, se aseguró de que los datos del objeto `housingLocation`, como el nombre, la ciudad o la foto, estén listos para ser usados desde la plantilla del componente hijo (`HousingLocation`).  
+De esta manera, cuando el template haga referencia a esas propiedades, Angular las mostrará automáticamente sin necesidad de código adicional.
+
+Aunque todavía no se están renderizando todas esas propiedades en pantalla, este paso dejó claro cómo Angular permite conectar los datos del componente con el template y cómo esos valores pueden cambiar de forma dinámica según lo que el componente reciba.
+
+Commit asociado: `feat(lesson-07): Add dynamic template values`
+
+
+
