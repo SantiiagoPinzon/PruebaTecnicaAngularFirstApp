@@ -121,6 +121,17 @@ Con estos cambios, la aplicación pasó de ser una simple lista a tener navegaci
 
 Commit asociado: `feat(lesson-11): Add details page with dynamic route`
 
+## Lesson 12 – Integrate Angular Forms
+
+En esta lección se aprendió a crear un formulario dentro de la página de detalles para que el usuario pueda enviar su información si está interesado en una vivienda. Hasta ahora la aplicación solo mostraba datos, pero no recibía nada del usuario.
+
+El tutorial mostró cómo agregar un formulario con tres campos: nombre, correo electrónico y número de unidades deseadas. Se siguió esos pasos y se añadió el formulario directamente en el componente de detalles, usando `ngModel` para enlazar los campos con propiedades en el componente.
+
+También se creó un método para manejar el envío del formulario, que por ahora solo imprime los valores en la consola. Aunque todavía no se procesa esa información, esta lección sirvió para entender cómo Angular maneja formularios simples y cómo se enlazan los inputs con variables en la clase.
+
+Después de agregar el formulario y su lógica básica, la aplicación siguió funcionando correctamente en `http://localhost:4200/`, mostrando los campos y permitiendo capturar la información del usuario.
+
+Commit asociado: `feat(lesson-12): Integrate Angular Forms`
 
 
 
